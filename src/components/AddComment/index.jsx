@@ -23,7 +23,7 @@ export const AddComment = ({setCommentsCount}) => {
       .catch(err => {
         console.log(err)
       })
-  }, [id, comments])
+  }, [id])
 
   const commentData = {
     post: id,
