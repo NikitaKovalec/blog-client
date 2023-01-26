@@ -9,7 +9,7 @@ import {SideBlock} from "../SideBlock";
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const [endpoint] = useState('http://localhost:4000');
+  const [endpoint] = useState(process.env.REACT_APP_API_URL);
   const socket = socketIOClient(endpoint);
 
   const handleSubmit = (event) => {
