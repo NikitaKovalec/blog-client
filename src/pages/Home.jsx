@@ -69,7 +69,7 @@ export const Home = () => {
             items={tags.items}
             isLoading={isTagsLoading}
           />
-          <Chat />
+          {/*<Chat />*/}
         </Grid>
       </Grid>
     </>
