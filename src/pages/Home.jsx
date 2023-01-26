@@ -7,6 +7,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {Post} from "../components";
 import {TagsBlock} from "../components";
 import {fetchPopPosts, fetchPosts, fetchTags} from "../redux/slices/posts";
+import Chat from "../components/Chat";
 
 export const Home = () => {
   const dispatch = useDispatch();
@@ -68,6 +69,7 @@ export const Home = () => {
             items={tags.items}
             isLoading={isTagsLoading}
           />
+          <Chat />
         </Grid>
       </Grid>
     </>

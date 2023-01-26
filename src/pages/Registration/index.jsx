@@ -21,9 +21,9 @@ export const Registration = () => {
     formState: {errors, isValid},
   } = useForm({
     defaultValues: {
-      fullName: 'Никита Ковалец',
-      email: 'nkov@gmail.com',
-      password: '123'
+      fullName: '',
+      email: '',
+      password: ''
     },
     mode: 'onChange'
   })
